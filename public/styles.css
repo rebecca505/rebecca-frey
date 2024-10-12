@@ -1,18 +1,3 @@
-header {
-    background: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    background: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-    position: relative; /* Ensure the footer is at the bottom */
-    bottom: 0;
-    width: 100%;
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -22,3 +7,73 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
+
+
+/* Define color variables at the top for easy reuse */
+:root {
+    --background-color: #F1F2ED;
+    --primary-color: #A2AC82;
+    --secondary-color: #5B6D49;
+    --accent-color: #0C3C01;
+    --text-color: #2E2D1D;
+}
+
+/* Apply colors to the body and general elements */
+body {
+    background-color: var(--background-color); /* Use background color */
+    color: var(--text-color); /* Set default text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: var(--accent-color); /* Primary color for header background */
+    color: var(--background-color); /* Light background color for text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background-color: var(--background-color); /* Same as body background */
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--secondary-color); /* Secondary color for footer background */
+    color: var(--background-color); /* Light color for text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button styling */
+button {
+    background-color: var(--primary-color); /* Accent color for buttons */
+    color: var(--background-color); /* Light text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--primary-color); /* Change color on hover */
+}
+
+/* Links */
+a {
+    color: var(--background-color); /* Accent color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}
+
+/* Add more specific styles for other sections (like background, jobs, projects, etc.) */
