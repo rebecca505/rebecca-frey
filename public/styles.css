@@ -1,0 +1,24 @@
+header {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Ensure the footer is at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
