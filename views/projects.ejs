@@ -4,13 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <title>My Projects</title>
 </head>
 <body>
     <%- include('header') %>
     
     <main>
         <h2>My Projects</h2>
-        <p>Describing my projects here...</p>
+        <p>Below are some of the projects I've worked on, showcasing my interests in web development, personal growth, and design.</p>
+        
+        <!-- Project 1: New Day, New Me -->
+        <!-- Project 1: New Day, New Me -->
+<section>
+    <h3><a href="https://react-website-test.onrender.com/instructions" target="_blank" rel="noopener noreferrer">New Day, New Me</a></h3>
+    <p><strong>Description:</strong> New Day, New Me is a personal growth project initially created to support my Catalyst card deck, which features 52 weekly challenges to help individuals achieve their New Year’s resolutions through small, actionable steps. I later rebuilt the project as a standalone website to provide a digital experience for the card deck.</p>
+    
+    <h4>Features</h4>
+    <ul>
+        <li>Journal: Track weekly reflections after completing activities.</li>
+        <li>Online Deck: Access the full card deck digitally.</li>
+        <li>Canva Link: Download or order the card deck.</li>
+        <li>Instructions: Detailed guide on using the deck.</li>
+        <li>About Me: Learn more about the inspiration behind the project.</li>
+    </ul>
+
+    <h4>Development Process</h4>
+    <p>I recreated the project using <strong>HTML</strong> and <strong>CSS</strong> on VSCode to move beyond the limitations of a drag-and-drop website builder, allowing for deeper customization and personal design. This project honed my skills in web development, design, and structuring user experiences.</p>
+
+    <h4>Technologies Used</h4>
+    <ul>
+        <li>HTML & CSS: Structured and styled the website.</li>
+        <li>Canva: Designed the physical card deck and provided a link for users to order their own sets.</li>
+    </ul>
+
+    <p>To explore the project further, visit my GitHub: <a href="https://github.com/rebecca505/react-website-test">react-website-test</a></p>
+</section>
+
+<!-- Project 2: What's Cookin' -->
+<section>
+    <h3><a href="https://devpost.com/software/dininghall" target="_blank" rel="noopener noreferrer">What's Cookin'</a></h3>
+    <p><strong>Description:</strong> What's Cookin' is an all-in-one dining hall recommendation tool and meal plan tracker. The main menu recommends dishes and the dining hall they are served at in real-time based on dietary restrictions, favorite dishes, and favorite dining hall. It also includes meal swipe and point balance and a list of currently open dining halls. The profile page allows users to edit their preferences.</p>
+
+    <h4>Inspiration</h4>
+    <p>This project was inspired by the need for a centralized and personalized campus dining experience. Students faced challenges in finding dining hall options that suited their dietary preferences and tracking their swipes and dining dollars.</p>
+
+    <h4>How We Built It</h4>
+    <p>We used Figma for the interactive UI mockup and then programmed in <strong>EJS</strong>, pulling in styles from <strong>Bootstrap</strong>. Our team broke the project into reusable components and built a clean UI with multiple pages. We implemented web scraping using <strong>Puppeteer</strong> to gather data from dining hall websites.</p>
+
+    <h4>Challenges Faced</h4>
+    <p>Testing was difficult due to many dining halls being closed at the time. We used the Wayback Machine to access older menus for testing. We also learned to manage our resources effectively, dividing tasks to ensure everything worked smoothly.</p>
+
+    <h4>Accomplishments</h4>
+    <p>We are proud of the progress made, especially since it was the first hackathon for 75% of our team. We effectively used Bootstrap for our first web application and managed to scrape dining data in real-time.</p>
+
+    <h4>What We Learned</h4>
+    <p>We enhanced our web development skills with <strong>Node.js</strong>, <strong>HTML</strong>, and <strong>CSS</strong>. We learned about package management and the logistics of web scraping using <strong>Axios API</strong> and <strong>Cheerio</strong>, along with <strong>Puppeteer</strong> for dynamic scraping.</p>
+
+    <h4>What's Next for What's Cookin'</h4>
+    <ul>
+        <li>Connect with SSOL for tracking meal swipes/points</li>
+        <li>Use LLM for broader food recommendations</li>
+        <li>Display upcoming dining events</li>
+        <li>Add a dining buddy feature</li>
+    </ul>
+
+    <p>To explore the project further, visit my GitHub: <a href="https://github.com/rebecca505/whatscookin">whatscookin</a></p>
+</section>
+
+        <!-- Add more project sections here -->
     </main>
     
     <%- include('footer') %>
