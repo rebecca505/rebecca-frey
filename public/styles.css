@@ -11,10 +11,12 @@ nav ul li {
 
 /* Define color variables at the top for easy reuse */
 :root {
+    --white: #FFFFFF;
     --background-color: #F1F2ED;
     --primary-color: #A2AC82;
     --secondary-color: #5B6D49;
     --accent-color: #0C3C01;
+    --accent-color2: #1C5B0F;
     --text-color: #2E2D1D;
 }
 
@@ -43,11 +45,11 @@ main {
 
 /* Footer styling */
 footer {
-    background-color: var(--secondary-color); /* Secondary color for footer background */
-    color: var(--background-color); /* Light color for text */
+    background-color: var(--white); /* Secondary color for footer background */
+    color: var(--text-color); /* Light color for text */
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -67,13 +69,33 @@ button:hover {
 }
 
 /* Links */
-a {
-    color: var(--background-color); /* Accent color for links */
+/* Header link styling */
+header a {
+    color: var(--background-color); /* Default link color in the header */
     text-decoration: none;
 }
 
-a:hover {
-    color: var(--primary-color); /* Change color on hover */
+header a:hover {
+    color: var(--primary-color); /* Change color on hover in the header */
 }
 
-/* Add more specific styles for other sections (like background, jobs, projects, etc.) */
+/* Footer link styling */
+footer a {
+    color: var(--accent-color); /* Default link color in the footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text-color); /* Change color on hover in the footer */
+}
+
+/* Style the canvas to fill the header area */
+#swirlCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Adjust this to how large you want the canvas */
+    z-index: -1; /* Send canvas behind text */
+    background-color: var(--background-color); /* Optional: background color for the canvas */
+}
